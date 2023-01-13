@@ -1,0 +1,12 @@
+// Types
+
+// Projects
+export const GET_PROJECTS_SUCCESS = 'GET_PROJECTS_SUCCESS';
+export const GET_PROJECTS_FAIL = 'GET_PROJECTS_FAIL';
+export const GET_PROJECT_SUCCESS = 'GET_PROJECT_SUCCESS';
+export const GET_PROJECT_FAIL = 'GET_PROJECT_FAIL';
+
+//Contact
+
+export const SEND_EMAIL_SUCCES = 'SEND_EMAIL_SUCCES';
+export const SEND_EMAIL_FAIL = 'SEND_EMAIL_FAIL';
