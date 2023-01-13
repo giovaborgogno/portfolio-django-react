@@ -39,6 +39,10 @@ const ProjectDetail = ({
             </Helmet>
 
             <Container>
+
+                <Typography variant="h4" sx={{ mt: 5 }}>
+                    Project Detail
+                </Typography>
                 {project !== null && project && project.id.toString() === projectId.toString() ?
                     <>
 
@@ -64,104 +68,25 @@ const ProjectDetail = ({
                                             className="text-base text-gray-700 space-y-6"
                                             dangerouslySetInnerHTML={{ __html: project && project.description }}
                                         />
-                                        <h3 className="">Website URL:</h3>
+                                        <h3 className="mt-3">Website URL:</h3>
 
-                                        <div
+                                        <a href={project.url}>{project.url}</a>
+
+                                        {/* <a
                                             className="text-base text-gray-700 space-y-6"
                                             dangerouslySetInnerHTML={{ __html: project && project.url }}
-                                        />
+                                        /> */}
 
-                                        <h3 className="">GitHub Repo:</h3>
+                                        <h3 className="mt-3">GitHub Repo:</h3>
+                                        <a href={project.git_repo}>{project.git_repo}</a>
 
-                                        <div
+                                        {/* <a
                                             className="text-base text-gray-700 space-y-6"
                                             dangerouslySetInnerHTML={{ __html: project && project.git_repo }}
-                                        />
+                                        /> */}
                                     </div>
 
-                                    <div className="mt-6">
-
-
-
-
-
-                                        {/* <p className="mt-4">
-                                    {
-                                        project &&
-                                            project !== null &&
-                                            project !== undefined &&
-                                            project.quantity > 0 ? (
-                                            <span className='text-green-500'>
-                                                In Stock
-                                            </span>
-                                        ) : (
-                                            <span className='text-red-500'>
-                                                Out of Stock
-                                            </span>
-                                        )
-                                    }
-                                </p> */}
-
-
-
-                                        {/* <div className="mt-4 flex sm:flex-col1">
-                                    {loading ?
-                                        <button
-                                            className="max-w-xs flex-1 bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full"
-                                        >
-                                            <Oval
-                                                type="Oval"
-                                                color="#fff"
-                                                width={20}
-                                                height={20}
-                                            />
-                                        </button>
-                                        :
-                                        project_added ?
-                                            <button
-                                                onClick={removeToCart}
-                                                className="max-w-xs flex-1 bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full"
-                                            >
-                                                Remove to cart
-                                            </button>
-                                            :
-                                            <button
-                                                onClick={addToCart}
-                                                className="max-w-xs flex-1 bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full"
-                                            >
-                                                Add to cart
-                                            </button>
-                                    }
-
-                                    {isFavorite? 
-                                    <button
-                                    onClick={addToWishlist}
-                                    className="ml-4 py-3 px-3 rounded-md flex items-center justify-center text-red-400 hover:bg-gray-100 hover:text-gray-500"
-                                >
-                                    <HeartIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
-                                    <span className="sr-only">Add to favorites</span>
-                                </button>
-                                :
-                                <button
-                                        onClick={addToWishlist}
-                                        className="ml-4 py-3 px-3 rounded-md flex items-center justify-center text-gray-400 hover:bg-red-100 hover:text-red-500"
-                                    >
-                                        <HeartIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
-                                        <span className="sr-only">Add to favorites</span>
-                                    </button>
-                                    }
-
-                                
-                                </div>
-                                <Link to="/cart">
-                                    <button
-                                        className=" pt-3 rounded-md flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500"
-                                    >
-                                        View Cart
-                                    </button>
-                                </Link> */}
-
-                                    </div>
+                                   
 
 
                                 </div>

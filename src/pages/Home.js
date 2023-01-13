@@ -27,6 +27,7 @@ import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import ContactForm from 'src/components/home/ContactForm';
 import { ProductCartWidget, ProductList } from 'src/sections/@dashboard/products';
+import {Link as ScrollLink, animateScroll as scroll} from 'react-scroll'
 
 const StyledContent = styled('div')(({ theme }) => ({
   // maxWidth: 480,
@@ -82,10 +83,14 @@ const Home = ({
           />
 
           {/* <Button to="#" size="large" variant="contained" component={RouterLink} > */}
+          <ScrollLink activeClass="active" to='contactsection'
+          spy={true} smooth={true} offset={50} duration={500}>
           <Button to="#contact" size="large" variant="contained" component={RouterLink} 
-          sx={{ backgroundColor: '#6E07F3', '&:hover' : {backgroundColor: "#5BE9B9"} }} >
+          sx={{ backgroundColor: '#6E07F3', '&:hover' : {backgroundColor: "#5BE9B9"} }} 
+          >
             Contact me
           </Button>
+          </ScrollLink>
         </StyledContent>
       </Container>
 
@@ -139,7 +144,7 @@ const Home = ({
 
         </Grid>
 
-        <Container sx={{ my: 10 }}>
+        <Container sx={{ mt: 10 }}>
           <Typography variant="h4" sx={{ mb: 5 , textAlign: 'center'}}>
             Portfolio
           </Typography>
@@ -158,8 +163,8 @@ const Home = ({
           {projects !== null && projects && <>
             <ProductList products={projects} sx={{ my:2}}/>
           </>}
-          <Stack direction="row" flexWrap="wrap-reverse" alignItems="center" justifyContent="flex-end" sx={{ mb: 5 }}>
-            <Stack direction="row" spacing={1} flexShrink={0} sx={{ my: 2, mr: 2 }}>
+          <Stack direction="row" flexWrap="wrap-reverse" alignItems="center" justifyContent="flex-end" >
+            <Stack direction="row" spacing={1} flexShrink={0} sx={{ mt: 2, mr: 2 }}>
               <RouterLink to={'/projects'} style={{textDecoration: 'none', color: '#6E07F3', }} >
 
                 View more projects
@@ -175,7 +180,7 @@ const Home = ({
           {/* <ProductCartWidget /> */}
         </Container>
 
-        <Container maxWidth='sm' id="contact">
+        <Container sx={{pt:15}} maxWidth='sm' name='contactsection' id="contactsection">
           <StyledContent>
             <Typography variant="h4" gutterBottom>
               Sign in to Minimal

@@ -210,8 +210,8 @@ EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 if not DEBUG:
     DEFAULT_FROM_EMAIL = 'Giovanni - Software Developer <giovaborgogno@gmail.com>'
     EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = "c2480355.ferozo.com"
-    EMAIL_HOST_USER = "giovanni@openm.us"
-    EMAIL_HOST_PASSWORD = "V*s688r4nU"
-    EMAIL_PORT = "465"
-    EMAIL_USE_SSL = True
+    EMAIL_HOST = os.environ.get('EMAIL_HOST')
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+    EMAIL_PORT = os.environ.get('EMAIL_PORT')
+    EMAIL_USE_SSL = os.environ.get('EMAIL_USE_SSL')

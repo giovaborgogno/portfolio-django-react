@@ -73,7 +73,7 @@ export default function ShopProductCard({ product }) {
           </Typography>
           <RouterLink to={`/projects/detail/${id}`} sx={{textDecoration: 'none'}} style={{textDecoration: 'none'}}>
           <Button /* variant="contained" */ 
-          sx={{ color:'#6E07F3', '&:hover' : {backgroundColor: "#6E07F3", color: 'white'} }}
+          sx={{ color:'#6E07F3', '&:hover' : {backgroundColor: "#5BE9B9", color: 'white'} }}
           >Detail</Button>
           </RouterLink>
         </Stack>
