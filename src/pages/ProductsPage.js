@@ -37,8 +37,8 @@ const ProductsPage = ({
       </Helmet>
 
       <Container>
-        <Typography variant="h4" sx={{ mb: 5 }}>
-          Products
+        <Typography variant="h4" sx={{ mt: 5 }}>
+          Projects
         </Typography>
 
         <Stack direction="row" flexWrap="wrap-reverse" alignItems="center" justifyContent="flex-end" sx={{ mb: 5 }}>
@@ -54,7 +54,6 @@ const ProductsPage = ({
         {projects !== null && projects && <>
         <ProductList products={projects} />
         </>}
-        <ProductCartWidget />
       </Container>
     </>
   );

@@ -47,16 +47,15 @@ OrderItem.propTypes = {
 };
 
 function OrderItem({ item, isLast }) {
-  const { type, title, time } = item;
+  const { priority, title, school, year_start, year_end, description } = item;
   return (
     <TimelineItem>
       <TimelineSeparator>
         <TimelineDot
           color={
-            (type === 'order1' && 'primary') ||
-            (type === 'order2' && 'success') ||
-            (type === 'order3' && 'info') ||
-            (type === 'order4' && 'warning') ||
+            (priority.toString() === '2' && 'primary') ||
+            (priority.toString() === '1' && 'success') ||
+            (priority.toString() === '3' && 'warning') ||
             'error'
           }
         />
@@ -64,10 +63,13 @@ function OrderItem({ item, isLast }) {
       </TimelineSeparator>
 
       <TimelineContent>
-        <Typography variant="subtitle2">{title}</Typography>
+        <Typography variant="subtitle2">{title} - {school}</Typography>
 
         <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-          {fDateTime(time)}
+          {year_start} - {year_end} |
+        </Typography>
+        <Typography variant="caption" sx={{ color: 'text.secondary' }}>
+          | {description}
         </Typography>
       </TimelineContent>
     </TimelineItem>

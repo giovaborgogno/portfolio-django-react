@@ -51,25 +51,57 @@ NewsItem.propTypes = {
 };
 
 function NewsItem({ news }) {
-  const { image, title, description, postedAt } = news;
+  const { position, year_start, year_end, company, description, detail_1, detail_2, detail_3 } = news;
 
   return (
-    <Stack direction="row" alignItems="center" spacing={2}>
-      <Box component="img" alt={title} src={image} sx={{ width: 48, height: 48, borderRadius: 1.5, flexShrink: 0 }} />
+    <Stack direction="row" alignItems="center" spacing={3}>
+      <Box component="img" alt={''} src={''} sx={{ width: 48, height: 48, borderRadius: 1.5, flexShrink: 0 }} />
 
-      <Box sx={{ minWidth: 240, flexGrow: 1 }}>
-        <Link color="inherit" variant="subtitle2" underline="hover" noWrap>
-          {title}
+      <Box sx={{  }}>
+        <Link color="inherit" variant="subtitle2" underline="hover" sx={{mb:1, pr: 3}} >
+          {position} - {company}
         </Link>
 
-        <Typography variant="body2" sx={{ color: 'text.secondary' }} noWrap>
+        <Typography variant="body1" sx={{ color: 'text.secondary', pr: 3 }} >
           {description}
         </Typography>
-      </Box>
 
-      <Typography variant="caption" sx={{ pr: 3, flexShrink: 0, color: 'text.secondary' }}>
-        {fToNow(postedAt)}
-      </Typography>
+        {year_end && year_end !== '' ?
+        <>
+          <Typography variant="body2" sx={{ pr: 3, flexShrink: 0, color: 'text.secondary' }}>
+            {year_start} to {year_end}
+          </Typography>
+        </>
+        :
+        <>
+          <Typography variant="body2" sx={{ pr: 3, flexShrink: 0, color: 'text.secondary' }}>
+            {year_start} to Present
+          </Typography>
+        </>
+      }
+
+        <Typography variant="body2" sx={{ pr: 3, color: 'text.secondary', textAlign: 'justify' ,my:1}} >
+          {detail_1}
+        </Typography>
+        {detail_2 && detail_2 !== '' &&
+          <>
+            <Typography variant="body2" sx={{ pr: 3, color: 'text.secondary', textAlign: 'justify' ,my:1}} >
+              {detail_2}
+            </Typography>
+          </>}
+
+        {detail_3 && detail_3 !== '' &&
+          <>
+            <Typography variant="body2" sx={{ pr: 3, color: 'text.secondary', textAlign: 'justify' ,my:1}} >
+              {detail_3}
+            </Typography>
+          </>}
+
+
+
+      </Box>
+     
+
     </Stack>
   );
 }

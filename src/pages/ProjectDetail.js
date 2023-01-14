@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 // @mui
-import { Container, Stack, Typography } from '@mui/material';
+import { Card, Container, Stack, Typography } from '@mui/material';
 // components
 import { connect } from 'react-redux';
 import { get_project, get_projects } from '../redux/actions/projects';
@@ -51,6 +51,7 @@ const ProjectDetail = ({
                             <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start">
                                 <ImageGallery data={project} />
                                 {/* project info */}
+                                <Card sx={{mt:3, py:3, px:3, }} className="md:mt-0">
                                 <div className="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0">
                                     <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">{project && project.name}</h1>
 
@@ -90,6 +91,7 @@ const ProjectDetail = ({
 
 
                                 </div>
+                                </Card>
 
                             </div>
                         </div>
