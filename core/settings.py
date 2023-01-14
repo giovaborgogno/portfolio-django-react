@@ -64,7 +64,7 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
-PROJET_APPS = ['apps.prueba', 'apps.contact', 'apps.projects']
+PROJET_APPS = ['apps.prueba', 'apps.contact', 'apps.projects', 'apps.experience', 'apps.education']
 THIRD_PARTY_APPS = [
     'corsheaders',
     'rest_framework',

@@ -23,6 +23,8 @@ import { upperCase } from 'lodash';
 
 // ------------ redux/actions
 import { get_project, get_projects } from '../redux/actions/projects';
+import { get_education } from '../redux/actions/education';
+import { get_experience } from '../redux/actions/experience';
 import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import ContactForm from 'src/components/home/ContactForm';
@@ -47,12 +49,18 @@ const Home = ({
   get_project,
   get_projects,
   projects,
+  get_education,
+  get_experience,
+  experience,
+  education,
 }) => {
   const theme = useTheme();
 
   useEffect(() => {
     // window.scrollTo(0, 0);
     get_projects(4);
+    get_education();
+    get_experience();
   }, [])
 
   return (
@@ -388,10 +396,14 @@ const Home = ({
 }
 
 const mapStateToProps = state => ({
-  projects: state.Projects.projects
+  projects: state.Projects.projects,
+  education: state.Education.education,
+  experience: state.Experience.experience
 })
 
 export default connect(mapStateToProps, {
   get_project,
-  get_projects
+  get_projects,
+  get_education,
+  get_experience
 })(Home)

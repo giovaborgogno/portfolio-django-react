@@ -25,7 +25,9 @@ urlpatterns = [
     
     path('api/contact/', include('apps.contact.urls')),
     path('api/projects/', include('apps.projects.urls')),
-    # path('api/contact', include('contactleadprueba.urls')),
+    path('api/experience/', include('apps.experience.urls')),
+    path('api/education/', include('apps.education.urls')),
+    
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += [re_path(r'^.*',
