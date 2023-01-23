@@ -51,11 +51,11 @@ NewsItem.propTypes = {
 };
 
 function NewsItem({ news }) {
-  const { position, year_start, year_end, company, description, detail_1, detail_2, detail_3 } = news;
+  const { position, year_start, year_end, company, photo, description, detail_1, detail_2, detail_3 } = news;
 
   return (
     <Stack direction="row" alignItems="center" spacing={3}>
-      <Box component="img" alt={''} src={''} sx={{ width: 48, height: 48, borderRadius: 1.5, flexShrink: 0 }} />
+      <Box component="img" alt={''} src={`${process.env.REACT_APP_API_URL}/${photo}`} sx={{ width: 48, height: 48, borderRadius: 1.5, flexShrink: 0 }} />
 
       <Box sx={{  }}>
         <Link color="inherit" variant="subtitle2" underline="hover" sx={{mb:1, pr: 3}} >

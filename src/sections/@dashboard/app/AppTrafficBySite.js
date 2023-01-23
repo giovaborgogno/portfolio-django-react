@@ -22,7 +22,7 @@ export default function AppTrafficBySite({ title, subheader, list, ...other }) {
           sx={{
             display: 'grid',
             gap: 2,
-            gridTemplateColumns: 'repeat(2, 1fr)',
+            gridTemplateColumns: 'repeat(1, 1fr)',
           }}
         >
           {list.map((site) => (

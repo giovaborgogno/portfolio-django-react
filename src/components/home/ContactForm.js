@@ -103,11 +103,11 @@ const ContactForm =({send_email})=> {
 
 
             {emailsent?
-            <LoadingButton fullWidth size="large" type="submit" variant="contained"  sx={{ mt: 3, backgroundColor: '#6E07F3 !important', '&:hover' : {backgroundColor: "#5BE9B9 !important"} }} >
+            <LoadingButton fullWidth size="large" type="submit" variant="contained"  sx={{ mt: 3, backgroundColor: '#5BE9B9 !important', '&:hover' : {backgroundColor: "#6E07F3 !important"} }} >
             Email sent. Thank you
         </LoadingButton>
             :
-            <LoadingButton fullWidth size="large" type="submit" variant="contained"  sx={{ mt: 3, backgroundColor: '#6E07F3 !important', '&:hover' : {backgroundColor: "#5BE9B9 !important"} }} >
+            <LoadingButton fullWidth size="large" type="submit" variant="contained"  sx={{ mt: 3, backgroundColor: '#5BE9B9 !important', '&:hover' : {backgroundColor: "#6E07F3 !important"} }} >
                 Send message
             </LoadingButton>
             }

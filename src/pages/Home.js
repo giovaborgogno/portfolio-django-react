@@ -4,7 +4,8 @@ import { Link as RouterLink } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 // @mui
 import { useTheme } from '@mui/material/styles';
-import { Box, Button, Grid, Container, Typography, Link, Stack, Divider, Card } from '@mui/material';
+import { Box, Button, Grid, Container, Typography, Link, Stack, Divider, Card, ListItem, List, ListItemIcon, ListItemText } from '@mui/material';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 // components
 import Iconify from '../components/iconify';
 // sections
@@ -67,7 +68,8 @@ const Home = ({
     <>
 
       <Helmet>
-        <title>Giovanni - Portfolio</title>
+        <title>Home - Giovanni Borgogno - Portfolio</title>
+        <meta name="description" content="Giovanni Borgogno Portfolio, view all projects" />
       </Helmet>
       <Container maxWidth="xl">
         <StyledContent sx={{ textAlign: 'center', alignItems: 'center' }}>
@@ -94,35 +96,110 @@ const Home = ({
           <ScrollLink activeClass="active" to='contactsection'
             spy={true} smooth={true} offset={50} duration={500}>
             <Button to="#contact" size="large" variant="contained" component={RouterLink}
-              sx={{ backgroundColor: '#6E07F3', '&:hover': { backgroundColor: "#5BE9B9" } }}
+              sx={{ backgroundColor: '#5BE9B9', '&:hover': { backgroundColor: "#6E07F3" } }}
             >
-              Contact me
+              Get in touch
             </Button>
           </ScrollLink>
         </StyledContent>
       </Container>
 
-
-
-
       <Container >
-        <Typography variant="h4" sx={{ mt: 10, mb: 5, textAlign: 'center' }}>
+        <Typography variant="h4" sx={{ mt: 10, mb: 10, textAlign: 'center' }}>
           Hi, Nice to meet you,
         </Typography>
-        <Container maxWidth='md' sx={{ mb: 5 }}>
+        <Grid container spacing={3} sx={{ alignItems: 'center' }}>
+          <Grid item xs={12} md={6} lg={4}>
 
+            <img src='/assets/images/avatars/avatar_default.jpg' style={{borderRadius: "2%"}} />
+          </Grid>
 
-          <Typography sx={{ color: 'text.secondary', textAlign: 'center' }}>
-            My name is Giovanni, I am on my 5th semester studying Systems Engineering. I am Software Developer and Marketing Specialist.
+          <Grid item xs={12} md={6} lg={8}>
 
-            Tools & Frameworks: React, Redux, Tailwind CSS, Python/Django, JavaScript/Node.Js, PHP, PostgreSQL, C++, Facebook Ads, Google Ads. <br />
+            <Typography sx={{ color: 'text.secondary', textAlign: 'justify' }}>
+              My name is Giovanni, I am on my 5th semester studying Systems Engineering. I am Software Developer and Marketing Specialist.
 
-            Leadership skills and team person.
-          </Typography>
-        </Container>
-          <br/><br/><br/>
-          Agregar mas info aca, capaz una foto, y una lista de tecnologias que uso
-        <Grid container spacing={3} >
+              Tools & Frameworks: React, Redux, Tailwind CSS, Python/Django, JavaScript/Node.Js, PHP, PostgreSQL, C++, Facebook Ads, Google Ads. <br />
+
+              Leadership skills and team person.
+
+              <Grid container>
+                <Grid item xs={12} sm={6}>
+                  <List>
+                    <ListItem>
+                      <ListItemIcon>
+                        <ArrowForwardIosIcon sx={{color:"#5BE9B9"}} />
+                      </ListItemIcon>
+                      <ListItemText primary="Python - Django" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <ArrowForwardIosIcon sx={{color:"#5BE9B9"}} />
+                      </ListItemIcon>
+                      <ListItemText primary="JavaScript - Node.js" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <ArrowForwardIosIcon sx={{color:"#5BE9B9"}} />
+                      </ListItemIcon>
+                      <ListItemText primary="PHP" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <ArrowForwardIosIcon sx={{color:"#5BE9B9"}} />
+                      </ListItemIcon>
+                      <ListItemText primary="React - Redux" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <ArrowForwardIosIcon sx={{color:"#5BE9B9"}} />
+                      </ListItemIcon>
+                      <ListItemText primary="Tailwind CSS - Material UI" />
+                    </ListItem>
+                  </List>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <List>
+                    <ListItem>
+                      <ListItemIcon>
+                        <ArrowForwardIosIcon sx={{color:"#5BE9B9"}} />
+                      </ListItemIcon>
+                      <ListItemText primary="Solidity - Web3" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <ArrowForwardIosIcon sx={{color:"#5BE9B9"}} />
+                      </ListItemIcon>
+                      <ListItemText primary="MySQL - PostgreSQL" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <ArrowForwardIosIcon sx={{color:"#5BE9B9"}} />
+                      </ListItemIcon>
+                      <ListItemText primary="C++" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <ArrowForwardIosIcon sx={{color:"#5BE9B9"}} />
+                      </ListItemIcon>
+                      <ListItemText primary="Facebook Ads - Google Ads" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <ArrowForwardIosIcon sx={{color:"#5BE9B9"}} />
+                      </ListItemIcon>
+                      <ListItemText primary="Open to Work Remotely" />
+                    </ListItem>
+
+                  </List>
+                </Grid>
+              </Grid>
+            </Typography>
+
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={3} sx={{ mt: 5 }}>
           <Grid item xs={12} sm={12} md={4} >
             <AppWidgetSummary title="Web development using the most recent frameworks & SEO optimization." total={'Web Development'} icon={'ant-design:code-filled'}
               sx={{
@@ -160,7 +237,7 @@ const Home = ({
         </Grid>
 
         {/* <Container sx={{ mt: 10 }}> */}
-        <Typography variant="h4" sx={{ mb: 5, textAlign: 'center', mt: 10 }}>
+        <Typography variant="h4" sx={{ mt: 10, textAlign: 'center' }}>
           Portfolio
         </Typography>
         <Container maxWidth='md'>
@@ -168,10 +245,6 @@ const Home = ({
 
           <Typography sx={{ color: 'text.secondary', textAlign: 'center' }}>
             These are some of the latest projects I've worked on. Built with different technologies such as React, PHP, Python/Django, WordPress. In addition, I have planned marketing and advertising strategies in them.
-
-            In my GitHub you can see all the repositories and other projects I worked.
-
-            Press the project for more info.
           </Typography>
         </Container>
 
@@ -191,60 +264,43 @@ const Home = ({
         </Stack>
 
 
-        <Grid container spacing={3} sx={{ pt: 16, mb: 5 }} name='contactsection' id="contactsection">
+        <Grid container spacing={3} sx={{ pt: 16 }} name='contactsection' id="contactsection">
           <Grid item xs={12} md={6} lg={4}>
-            <AppTrafficBySite
-              title="Traffic by Site"
-              list={[
-                {
-                  name: 'FaceBook',
-                  value: 323234,
-                  icon: <Iconify icon={'eva:facebook-fill'} color="#1877F2" width={32} />,
-                },
-                {
-                  name: 'Google',
-                  value: 341212,
-                  icon: <Iconify icon={'eva:google-fill'} color="#DF3E30" width={32} />,
-                },
-                {
-                  name: 'Linkedin',
-                  value: 411213,
-                  icon: <Iconify icon={'eva:linkedin-fill'} color="#006097" width={32} />,
-                },
-                {
-                  name: 'Twitter',
-                  value: 443232,
-                  icon: <Iconify icon={'eva:twitter-fill'} color="#1C9CEA" width={32} />,
-                },
-              ]}
-            />
+            <Box sx={{ px: 2.5, py: 3}}>
+              <Stack alignItems="center" spacing={3} sx={{ pt: 5, borderRadius: 2, position: 'relative' }}>
+                <Box
+                  component="img"
+                  src="/assets/illustrations/illustration_contact.png"
+                  // sx={{ width: 100, position: 'absolute', top: -50 }}
+                />
+
+                <Box sx={{ textAlign: 'center' }}>
+                  <Typography gutterBottom variant="h6">
+                   Like what you see?
+                  </Typography>
+
+                  <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                  Thank you for visiting my website, I would love to work with you. Contact me.
+                  </Typography>
+                </Box>
+
+                
+              </Stack>
+            </Box>
           </Grid>
 
-          <Grid item xs={12} md={6} lg={8}>
+          <Grid item xs={12} md={6} lg={8} >
             <Card>
               <StyledContent sx={{ px: 3 }} >
                 <Typography variant="h4" gutterBottom>
-                  Contact
+                  Get in touch
                 </Typography>
 
-                <Typography variant="body2" sx={{ mb: 5 }}>
-                  Don’t have an account? {''}
-                  <Link variant="subtitle2">Get started</Link>
+                <Typography variant="body2" >
+                  Send me an email, I appreciate your message.
                 </Typography>
 
-                {/* <Stack direction="row" spacing={2}>
-                <Button fullWidth size="large" color="inherit" variant="outlined">
-                  <Iconify icon="eva:google-fill" color="#DF3E30" width={22} height={22} />
-                </Button>
 
-                <Button fullWidth size="large" color="inherit" variant="outlined">
-                  <Iconify icon="eva:facebook-fill" color="#1877F2" width={22} height={22} />
-                </Button>
-
-                <Button fullWidth size="large" color="inherit" variant="outlined">
-                  <Iconify icon="eva:twitter-fill" color="#1C9CEA" width={22} height={22} />
-                </Button>
-              </Stack> */}
 
                 <Divider sx={{ my: 3 }}>
 
@@ -256,7 +312,7 @@ const Home = ({
           </Grid>
         </Grid>
 
-        <Grid container spacing={3}>
+        <Grid container spacing={3} sx={{ mt: 5 }}>
 
           <Grid item xs={12} md={6} lg={8}>
 
