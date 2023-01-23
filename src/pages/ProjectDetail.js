@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { get_project, get_projects } from '../redux/actions/projects';
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import ImageGallery from "../components/project/ImageGallery";
+import ImageGallery from "../sections/project/ImageGallery";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 // ----------------------------------------------------------------------
