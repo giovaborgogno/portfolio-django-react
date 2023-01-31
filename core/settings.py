@@ -36,23 +36,9 @@ DEBUG = False
 DOMAIN = os.environ.get('DOMAIN')
 
 ALLOWED_HOSTS = ['*']
-# ALLOWED_HOSTS = ['*', '.vercel.app']
 
 
 # Application definition
-
-# INSTALLED_APPS = [
-#     'django.contrib.admin',
-#     'django.contrib.auth',
-#     'django.contrib.contenttypes',
-#     'django.contrib.sessions',
-#     'django.contrib.messages',
-#     'django.contrib.staticfiles',
-#     'corsheaders',
-#     'rest_framework',
-#     'apps',
-#     'contactleadprueba'
-# ]
 
 DJANGO_APPS = [
     'django.contrib.admin',
