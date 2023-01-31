@@ -30,8 +30,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3t)&z#d%gzmine*a!fwj^f-um5_0oi8-p21&(9i)l7mdgvzxaj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
 DOMAIN = os.environ.get('DOMAIN')
 
@@ -135,6 +135,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:8080',
     'http://127.0.0.1:3000',
     'http://0.0.0.0:8080',
+    'https://www.giovaborgogno.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -145,6 +146,7 @@ CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:8000',
     'http://127.0.0.1:3000',
     'http://0.0.0.0:8080',
+    'https://www.giovaborgogno.com'
 ]
 
 
