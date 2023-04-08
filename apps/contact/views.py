@@ -36,8 +36,8 @@ class SendEmailContact(APIView):
                         + '\nSubject: ' + subject
                         + '\n\nMessage: ' + message
                         + '\n\nFrom Giovanni Portfolio',
-                        'giovanni@openm.us',
-                        ['giovanni@openm.us'],
+                        'giovaborgogno@itvirtuous.com',
+                        ['giovaborgogno@itvirtuous.com'],
                         fail_silently=False
                     )
                 
@@ -45,7 +45,7 @@ class SendEmailContact(APIView):
             
             except:
                 return Response(
-                    {'error': 'Failed to send email to giovanni@openm.us'},
+                    {'error': 'Failed to send email to giovaborgogno@itvirtuous.com'},
                     status=status.HTTP_500_INTERNAL_SERVER_ERROR
                 )
                 
@@ -57,7 +57,7 @@ class SendEmailContact(APIView):
                     + '\nGive me some time to process your info and I\'ll contact you.'
                     + '\n\nSincerely,'
                     + '\nGiovanni Borgogno',
-                    'giovanni@openm.us',
+                    'giovaborgogno@itvirtuous.com',
                     [email],
                     fail_silently=False
                 )
