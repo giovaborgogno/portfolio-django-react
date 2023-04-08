@@ -30,8 +30,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3t)&z#d%gzmine*a!fwj^f-um5_0oi8-p21&(9i)l7mdgvzxaj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-# DEBUG = True
+# DEBUG = False
+DEBUG = True
 
 DOMAIN = os.environ.get('DOMAIN')
 
@@ -170,21 +170,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'build/static'),
+    
+]
+
+STATICFILES_STORAGE = (
+    'whitenoise.storage.CompressedManifestStaticFilesStorage')
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'build/static'),
-    
-]
-
-##########
-STATICFILES_STORAGE = (
-    'whitenoise.storage.CompressedManifestStaticFilesStorage')
-WHITENOISE_ROOT = 'build/root'
+WHITENOISE_ROOT = os.path.join(BASE_DIR, 'build/root')
+# WHITENOISE_ROOT = 'build/root'
 
 
 
@@ -195,11 +196,19 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 
-if not DEBUG:
-    DEFAULT_FROM_EMAIL = 'Giovanni - Software Developer <giovaborgogno@gmail.com>'
-    EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = os.environ.get('EMAIL_HOST')
-    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-    EMAIL_PORT = os.environ.get('EMAIL_PORT')
-    EMAIL_USE_SSL = os.environ.get('EMAIL_USE_SSL')
+# if not DEBUG:
+#     DEFAULT_FROM_EMAIL = 'Giovanni - Software Developer <giovaborgogno@gmail.com>'
+#     EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+#     EMAIL_HOST = os.environ.get('EMAIL_HOST')
+#     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+#     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+#     EMAIL_PORT = os.environ.get('EMAIL_PORT')
+#     EMAIL_USE_SSL = os.environ.get('EMAIL_USE_SSL')
+
+DEFAULT_FROM_EMAIL = 'Giovanni - Software Developer <giovaborgogno@gmail.com>'
+EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = os.environ.get('EMAIL_HOST')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = os.environ.get('EMAIL_PORT')
+EMAIL_USE_SSL = os.environ.get('EMAIL_USE_SSL')

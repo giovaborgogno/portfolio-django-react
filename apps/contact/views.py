@@ -30,16 +30,16 @@ class SendEmailContact(APIView):
             
             try:
                 send_mail(
-                    'New Client',
-                    'Full Name: ' + full_name + ','
-                    + '\n\nEmail: ' + email
-                    + '\nSubject: ' + subject
-                    + '\n\nMessage: ' + message
-                    + '\n\nFrom Giovanni Portfolio',
-                    'giovanni@openm.us',
-                    ['giovanni@openm.us'],
-                    fail_silently=False
-                )
+                        'New Client',
+                        'Full Name: ' + full_name + ','
+                        + '\n\nEmail: ' + email
+                        + '\nSubject: ' + subject
+                        + '\n\nMessage: ' + message
+                        + '\n\nFrom Giovanni Portfolio',
+                        'giovanni@openm.us',
+                        ['giovanni@openm.us'],
+                        fail_silently=False
+                    )
                 
             
             
