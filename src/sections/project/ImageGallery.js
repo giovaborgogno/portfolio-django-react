@@ -24,7 +24,7 @@ const ImageGallery = ({ data }) => {
                                         <span className="sr-only">{data.name}</span>
                                         <span className="absolute inset-0 rounded-md overflow-hidden">
                                             {/* <img src={product.images[0].src} alt="" className="w-full h-full object-center object-cover" /> */}
-                                            <img src={`/${data.photo_1}`} alt="" className="w-full h-full object-center object-cover" />
+                                            <img src={`${data.photo_1}`} alt="" className="w-full h-full object-center object-cover" />
                                         </span>
                                         <span
                                             className={classNames(
@@ -45,7 +45,7 @@ const ImageGallery = ({ data }) => {
                                      <span className="sr-only">{data.name}</span>
                                      <span className="absolute inset-0 rounded-md overflow-hidden">
                                          {/* <img src={product.images[0].src} alt="" className="w-full h-full object-center object-cover" /> */}
-                                         <img src={`/${data.photo_2}`} alt="" className="w-full h-full object-center object-cover" />
+                                         <img src={`${data.photo_2}`} alt="" className="w-full h-full object-center object-cover" />
                                      </span>
                                      <span
                                          className={classNames(
@@ -66,7 +66,7 @@ const ImageGallery = ({ data }) => {
                                   <span className="sr-only">{data.name}</span>
                                   <span className="absolute inset-0 rounded-md overflow-hidden">
                                       {/* <img src={product.images[0].src} alt="" className="w-full h-full object-center object-cover" /> */}
-                                      <img src={`/${data.photo_3}`} alt="" className="w-full h-full object-center object-cover" />
+                                      <img src={`${data.photo_3}`} alt="" className="w-full h-full object-center object-cover" />
                                   </span>
                                   <span
                                       className={classNames(
