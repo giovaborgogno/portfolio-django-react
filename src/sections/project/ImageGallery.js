@@ -24,7 +24,7 @@ const ImageGallery = ({ data }) => {
                                         <span className="sr-only">{data.name}</span>
                                         <span className="absolute inset-0 rounded-md overflow-hidden">
                                             {/* <img src={product.images[0].src} alt="" className="w-full h-full object-center object-cover" /> */}
-                                            <img src={`${process.env.REACT_APP_API_URL}/${data.photo_1}`} alt="" className="w-full h-full object-center object-cover" />
+                                            <img src={`/${data.photo_1}`} alt="" className="w-full h-full object-center object-cover" />
                                         </span>
                                         <span
                                             className={classNames(
@@ -45,7 +45,7 @@ const ImageGallery = ({ data }) => {
                                      <span className="sr-only">{data.name}</span>
                                      <span className="absolute inset-0 rounded-md overflow-hidden">
                                          {/* <img src={product.images[0].src} alt="" className="w-full h-full object-center object-cover" /> */}
-                                         <img src={`${process.env.REACT_APP_API_URL}/${data.photo_2}`} alt="" className="w-full h-full object-center object-cover" />
+                                         <img src={`/${data.photo_2}`} alt="" className="w-full h-full object-center object-cover" />
                                      </span>
                                      <span
                                          className={classNames(
@@ -66,7 +66,7 @@ const ImageGallery = ({ data }) => {
                                   <span className="sr-only">{data.name}</span>
                                   <span className="absolute inset-0 rounded-md overflow-hidden">
                                       {/* <img src={product.images[0].src} alt="" className="w-full h-full object-center object-cover" /> */}
-                                      <img src={`${process.env.REACT_APP_API_URL}/${data.photo_3}`} alt="" className="w-full h-full object-center object-cover" />
+                                      <img src={`/${data.photo_3}`} alt="" className="w-full h-full object-center object-cover" />
                                   </span>
                                   <span
                                       className={classNames(
@@ -90,7 +90,7 @@ const ImageGallery = ({ data }) => {
                         <Tab.Panel key={data.id}>
                             <img
                                 // src={product.images[0].src}
-                                src={`${process.env.REACT_APP_API_URL}/${data.photo_1}`}
+                                src={`${data.photo_1}`}
                                 alt=""
                                 className="w-full h-full object-center object-cover sm:rounded-lg"
                             />
@@ -98,7 +98,7 @@ const ImageGallery = ({ data }) => {
                         <Tab.Panel key={data.id}>
                             <img
                                 // src={product.images[0].src}
-                                src={`${process.env.REACT_APP_API_URL}/${data.photo_2}`}
+                                src={`${data.photo_2}`}
                                 alt=""
                                 className="w-full h-full object-center object-cover sm:rounded-lg"
                             />
@@ -106,7 +106,7 @@ const ImageGallery = ({ data }) => {
                         <Tab.Panel key={data.id}>
                             <img
                                 // src={product.images[0].src}
-                                src={`${process.env.REACT_APP_API_URL}/${data.photo_3}`}
+                                src={`${data.photo_3}`}
                                 alt=""
                                 className="w-full h-full object-center object-cover sm:rounded-lg"
                             />

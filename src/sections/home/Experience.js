@@ -53,7 +53,7 @@ function ExperienceItem({ experience }) {
 
   return (
     <Stack direction="row" alignItems="center" spacing={3}>
-      <Box component="img" alt={''} src={`${process.env.REACT_APP_API_URL}/${photo}`} sx={{ width: 48, height: 48, borderRadius: 1.5, flexShrink: 0 }} />
+      <Box component="img" alt={''} src={`${photo}`} sx={{ width: 48, height: 48, borderRadius: 1.5, flexShrink: 0 }} />
 
       <Box sx={{  }}>
         <Link color="inherit" variant="subtitle2" underline="hover" sx={{mb:1, pr: 3}} >

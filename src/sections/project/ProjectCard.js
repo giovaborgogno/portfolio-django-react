@@ -35,7 +35,7 @@ export default function ProjectCard({ project }) {
       <Box sx={{ pt: '100%', position: 'relative' }}>
 
         <RouterLink to={`/projects/detail/${id}`}>
-          <StyledProjectImg alt={name} src={`${process.env.REACT_APP_API_URL}/${photo_1}`} />
+          <StyledProjectImg alt={name} src={`${photo_1}`} />
         </RouterLink>
       </Box>
 
