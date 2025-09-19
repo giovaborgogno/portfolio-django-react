@@ -70,7 +70,7 @@ const Home = ({
           </Typography>
           
           <Typography variant="h3" sx={{ color: '#5BE9B9' }}>
-            I'm a Backend Developer & Marketing Specialist
+            I'm a Backend Developer, Marketing Specialist, & Frontend Developer
           </Typography>
 
           <Box

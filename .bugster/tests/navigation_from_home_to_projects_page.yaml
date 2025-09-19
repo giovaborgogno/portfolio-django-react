@@ -4,8 +4,11 @@ page_path: src/pages/Home.js
 task: Verify navigation from home to projects page
 steps:
 - Navigate to the home page
+- Verify that the profile description shows 'I'm a Backend Developer, Marketing Specialist,
+  & Frontend Developer'
 - Find the projects section or navigation link
 - Click on 'View All Projects' or equivalent link
 - Verify redirect to the projects page
 expected_result: User should be redirected to the projects page when clicking the
-  projects link
+  projects link while the updated profile description shows 'I'm a Backend Developer,
+  Marketing Specialist, & Frontend Developer'

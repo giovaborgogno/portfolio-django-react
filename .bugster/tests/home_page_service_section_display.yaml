@@ -7,4 +7,8 @@ steps:
 - Scroll to the services section
 - Verify all service cards are displayed
 - Check that each service card has a title and description
+- Verify the developer role text displays 'I'm a Backend Developer, Marketing Specialist,
+  & Frontend Developer'
 expected_result: Services section should display all service cards with proper formatting
+  and show updated role text 'Backend Developer, Marketing Specialist, & Frontend
+  Developer'
