@@ -1,0 +1,9 @@
+name: Back navigation from project detail page
+page: /projects/detail/:projectId
+page_path: src/pages/ProjectDetail.js
+task: Verify back navigation from project detail to projects list
+steps:
+- Navigate to a project detail page
+- Find and click the back arrow button
+- Verify redirect to projects list page
+expected_result: User should be able to navigate back to projects list page

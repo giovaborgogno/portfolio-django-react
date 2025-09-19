@@ -1,0 +1,16 @@
+name: Contact form submission on home page
+page: /home
+page_path: src/pages/Home.js
+task: Verify contact form submission functionality
+steps:
+- Navigate to the home page
+- Verify that the profile description includes 'Backend Developer, Marketing Specialist,
+  & Frontend Developer'
+- Scroll to the contact form section
+- Fill in name field with 'Test User'
+- Fill in email field with 'test@example.com'
+- Enter message in the message field
+- Click submit button
+- Verify submission success message or feedback
+expected_result: Form should accept input and submit successfully, with updated profile
+  description showing Frontend Developer role

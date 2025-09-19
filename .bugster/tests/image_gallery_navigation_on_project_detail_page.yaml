@@ -1,0 +1,11 @@
+name: Image gallery navigation on project detail page
+page: /projects/detail/:projectId
+page_path: src/pages/ProjectDetail.js
+task: Verify image gallery functionality on project detail page
+steps:
+- Navigate to a project detail page
+- Locate the image gallery
+- Click on the next button to view the next image
+- Click on the previous button to view the previous image
+- Verify images change correctly when navigating
+expected_result: Users should be able to navigate through project images in the gallery

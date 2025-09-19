@@ -1,0 +1,12 @@
+name: Navigation from projects list to project detail
+page: /projects
+page_path: src/pages/ProjectsPage.js
+task: Verify navigation from projects list to individual project detail
+steps:
+- Navigate to the projects page
+- Select a project card from the list
+- Click on the project card
+- Verify redirect to the project detail page
+- Verify project detail page shows selected project
+expected_result: User should be redirected to project detail page when clicking a
+  project

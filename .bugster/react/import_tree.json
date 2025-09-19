@@ -1,0 +1,141 @@
+{
+  "src/pages/ProjectDetail.js": {
+    "path": "src/pages/ProjectDetail.js",
+    "imports": {
+      "../redux/actions/projects": {
+        "path": "src/redux/actions/projects.js",
+        "imports": {},
+        "import_count": 0
+      },
+      "../sections/project/ImageGallery": {
+        "path": "src/sections/project/ImageGallery.js",
+        "imports": {},
+        "import_count": 0
+      }
+    },
+    "import_count": 2
+  },
+  "src/pages/Page404.js": {
+    "path": "src/pages/Page404.js",
+    "imports": {},
+    "import_count": 0
+  },
+  "src/pages/Home.js": {
+    "path": "src/pages/Home.js",
+    "imports": {
+      "../components/iconify": {
+        "path": "src/components/iconify/index.js",
+        "imports": {},
+        "import_count": 0
+      },
+      "../redux/actions/projects": {
+        "path": "src/redux/actions/projects.js",
+        "imports": {},
+        "import_count": 0
+      },
+      "../redux/actions/education": {
+        "path": "src/redux/actions/education.js",
+        "imports": {},
+        "import_count": 0
+      },
+      "../redux/actions/experience": {
+        "path": "src/redux/actions/experience.js",
+        "imports": {},
+        "import_count": 0
+      },
+      "src/sections/home/ListTools": {
+        "path": "src/sections/home/ListTools.js",
+        "imports": {},
+        "import_count": 0
+      },
+      "src/sections/project/ProjectsList": {
+        "path": "src/sections/project/ProjectsList.js",
+        "imports": {
+          "./ProjectCard": {
+            "path": "src/sections/project/ProjectCard.js",
+            "imports": {},
+            "import_count": 0
+          }
+        },
+        "import_count": 1
+      },
+      "src/sections/home/GetInTouch": {
+        "path": "src/sections/home/GetInTouch.js",
+        "imports": {
+          "./ContactForm": {
+            "path": "src/sections/home/ContactForm.js",
+            "imports": {
+              "../../components/iconify": {
+                "path": "src/components/iconify/index.js",
+                "imports": {},
+                "circular": true
+              },
+              "../../redux/actions/contact": {
+                "path": "src/redux/actions/contact.js",
+                "imports": {},
+                "import_count": 0
+              }
+            },
+            "import_count": 2
+          }
+        },
+        "import_count": 1
+      },
+      "src/sections/home/Experience": {
+        "path": "src/sections/home/Experience.js",
+        "imports": {
+          "../../components/iconify": {
+            "path": "src/components/iconify/index.js",
+            "imports": {},
+            "circular": true
+          },
+          "../../components/scrollbar": {
+            "path": "src/components/scrollbar/index.js",
+            "imports": {},
+            "import_count": 0
+          }
+        },
+        "import_count": 2
+      },
+      "src/sections/home/Education": {
+        "path": "src/sections/home/Education.js",
+        "imports": {},
+        "import_count": 0
+      },
+      "src/sections/home/Services": {
+        "path": "src/sections/home/Services.js",
+        "imports": {
+          "../../components/iconify": {
+            "path": "src/components/iconify/index.js",
+            "imports": {},
+            "circular": true
+          }
+        },
+        "import_count": 1
+      }
+    },
+    "import_count": 10
+  },
+  "src/pages/ProjectsPage.js": {
+    "path": "src/pages/ProjectsPage.js",
+    "imports": {
+      "src/sections/project/ProjectsList": {
+        "path": "src/sections/project/ProjectsList.js",
+        "imports": {
+          "./ProjectCard": {
+            "path": "src/sections/project/ProjectCard.js",
+            "imports": {},
+            "import_count": 0
+          }
+        },
+        "import_count": 1
+      },
+      "../redux/actions/projects": {
+        "path": "src/redux/actions/projects.js",
+        "imports": {},
+        "import_count": 0
+      }
+    },
+    "import_count": 2
+  }
+}

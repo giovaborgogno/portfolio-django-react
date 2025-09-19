@@ -1,0 +1,14 @@
+name: Home page navigation and content display
+page: /home
+page_path: src/pages/Home.js
+task: Verify home page navigation and content display
+steps:
+- Navigate to the home page
+- Verify the header and hero section are displayed
+- Verify the professional description includes 'Backend Developer, Marketing Specialist,
+  & Frontend Developer'
+- Scroll down to check if services section is visible
+- Scroll down to check if projects section is visible
+- Scroll down to check if contact section is visible
+expected_result: All home page sections should be visible and properly rendered with
+  updated professional description
