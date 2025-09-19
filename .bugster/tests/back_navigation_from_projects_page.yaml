@@ -1,0 +1,9 @@
+name: Back navigation from projects page
+page: /projects
+page_path: src/pages/ProjectsPage.js
+task: Verify back navigation from projects page to home
+steps:
+- Navigate to the projects page
+- Find and click the back arrow or home link
+- Verify redirect to home page
+expected_result: User should be able to navigate back to home page

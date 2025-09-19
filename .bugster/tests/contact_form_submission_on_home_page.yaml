@@ -1,0 +1,13 @@
+name: Contact form submission on home page
+page: /home
+page_path: src/pages/Home.js
+task: Verify contact form submission functionality
+steps:
+- Navigate to the home page
+- Scroll to the contact form section
+- Fill in name field with 'Test User'
+- Fill in email field with 'test@example.com'
+- Enter message in the message field
+- Click submit button
+- Verify submission success message or feedback
+expected_result: Form should accept input and submit successfully

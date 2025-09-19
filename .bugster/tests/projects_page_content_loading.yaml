@@ -1,0 +1,10 @@
+name: Projects page content loading
+page: /projects
+page_path: src/pages/ProjectsPage.js
+task: Verify projects page loads and displays projects
+steps:
+- Navigate to the projects page
+- Verify page title and header are displayed
+- Check that project cards are loading
+- Verify each project card displays a title and image
+expected_result: Projects page should load and display a list of projects
