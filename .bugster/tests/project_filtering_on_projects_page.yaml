@@ -1,0 +1,11 @@
+name: Project filtering on projects page
+page: /projects
+page_path: src/pages/ProjectsPage.js
+task: Verify project filtering functionality
+steps:
+- Navigate to the projects page
+- Open the filter menu by clicking filter button
+- Select a filter option
+- Verify projects list updates according to selected filter
+- Verify filtered results match the selected criteria
+expected_result: Projects should filter according to selected criteria

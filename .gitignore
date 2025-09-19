@@ -24,3 +24,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .vercel
+
+# Bugster
+.bugster/results/
+.bugster/screenshots/
+.bugster/videos/
+.bugster/logs/
+.bugster/reports/
+.bugster/.env
+*.bugster.log
+.bugster/paths.json
+.bugster/ui_config_cache.json
+.bugster/files/

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "timestamp": 1758311813976,
+    "git": {
+      "branch": "main",
+      "commit": "e1a69572d89afbe6f0343ce91eb8e308c6ca655e"
+    }
+  },
+  "data": {
+    "frameworks": [
+      {
+        "id": "react",
+        "name": "React.js",
+        "dir_path": "/Users/francosbenitez/Documents/Projects/projects-examples/portfolio-django-react"
+      }
+    ]
+  }
+}

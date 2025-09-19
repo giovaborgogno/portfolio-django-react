@@ -1,0 +1,11 @@
+name: Navigation from home to projects page
+page: /home
+page_path: src/pages/Home.js
+task: Verify navigation from home to projects page
+steps:
+- Navigate to the home page
+- Find the projects section or navigation link
+- Click on 'View All Projects' or equivalent link
+- Verify redirect to the projects page
+expected_result: User should be redirected to the projects page when clicking the
+  projects link

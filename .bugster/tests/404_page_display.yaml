@@ -1,0 +1,11 @@
+name: 404 page display
+page: /404
+page_path: src/pages/Page404.js
+task: Verify 404 page is displayed for non-existent routes
+steps:
+- Navigate to a non-existent route (e.g., /nonexistent)
+- Verify 404 page is displayed
+- Check that error message is visible
+- Verify 'Go Home' or equivalent button is present
+- Click 'Go Home' button and verify redirect to home page
+expected_result: 404 page should be displayed with proper message and return option

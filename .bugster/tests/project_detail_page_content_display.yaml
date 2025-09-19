@@ -1,0 +1,12 @@
+name: Project detail page content display
+page: /projects/detail/:projectId
+page_path: src/pages/ProjectDetail.js
+task: Verify project detail page loads and displays correct project information
+steps:
+- Navigate to a specific project detail page
+- Verify project title is displayed
+- Check that project description is visible
+- Verify project images are loaded in the gallery
+- Check that project details (technologies, date, etc.) are displayed
+expected_result: Project detail page should show detailed information about the selected
+  project

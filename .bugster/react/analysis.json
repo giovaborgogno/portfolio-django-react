@@ -1,0 +1,247 @@
+{
+  "metadata": {
+    "timestamp": 1758311814.072879,
+    "git": {
+      "branch": "main",
+      "commit": "e1a69572d89afbe6f0343ce91eb8e308c6ca655e"
+    }
+  },
+  "data": {
+    "framework": {
+      "id": "react",
+      "name": "React.js",
+      "dir_path": "/Users/francosbenitez/Documents/Projects/projects-examples/portfolio-django-react"
+    },
+    "router_type": "react-router",
+    "stats": {
+      "fileCount": 85,
+      "routeCount": 5,
+      "apiRouteCount": 0,
+      "layoutCount": 0
+    },
+    "layouts": [],
+    "routes": [
+      {
+        "routePath": "/home",
+        "relativeFilePath": "src/pages/Home.js",
+        "layoutChain": [],
+        "components": [
+          "Home",
+          "Helmet",
+          "Container",
+          "StyledContent",
+          "Typography",
+          "Box",
+          "ScrollLink",
+          "Button",
+          "Grid",
+          "ListTools",
+          "Services",
+          "ProjectsList",
+          "Stack",
+          "RouterLink",
+          "Iconify",
+          "GetInTouch",
+          "Experience",
+          "Education"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useTheme",
+          "useEffect"
+        ],
+        "eventHandlers": [],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/projects",
+        "relativeFilePath": "src/pages/ProjectsPage.js",
+        "layoutChain": [],
+        "components": [
+          "ProjectsPage",
+          "Helmet",
+          "Container",
+          "Box",
+          "Link",
+          "ArrowBackIcon",
+          "Typography",
+          "Stack",
+          "ProjectsList"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useEffect",
+          "useState"
+        ],
+        "eventHandlers": [
+          "handleCloseFilter",
+          "handleOpenFilter"
+        ],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/projects/detail/:projectId",
+        "relativeFilePath": "src/pages/ProjectDetail.js",
+        "layoutChain": [],
+        "components": [
+          "ProjectDetail",
+          "Helmet",
+          "Container",
+          "Box",
+          "Link",
+          "ArrowBackIcon",
+          "Typography",
+          "ImageGallery",
+          "Card"
+        ],
+        "hasParams": true,
+        "hasForm": false,
+        "hooks": [
+          "useParams",
+          "useEffect",
+          "useState"
+        ],
+        "eventHandlers": [
+          "handleCloseFilter",
+          "handleOpenFilter",
+          "onCloseFilter",
+          "onOpenFilter"
+        ],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/",
+        "relativeFilePath": "src/layouts/dashboard/DashboardLayout.js",
+        "layoutChain": [],
+        "components": [
+          "DashboardLayout",
+          "StyledRoot",
+          "Header",
+          "Nav",
+          "Main",
+          "Outlet",
+          "Footer"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [
+          "useState"
+        ],
+        "eventHandlers": [
+          "onCloseNav",
+          "onOpenNav"
+        ],
+        "featureFlags": []
+      },
+      {
+        "routePath": "/404",
+        "relativeFilePath": "src/pages/Page404.js",
+        "layoutChain": [],
+        "components": [
+          "Page404",
+          "Helmet",
+          "Container",
+          "StyledContent",
+          "Typography",
+          "Box",
+          "Button"
+        ],
+        "hasParams": false,
+        "hasForm": false,
+        "hooks": [],
+        "eventHandlers": [],
+        "featureFlags": []
+      }
+    ],
+    "api_routes": [],
+    "all_paths": [
+      "src/App.js",
+      "src/_mock/account.js",
+      "src/components/color-utils/ColorMultiPicker.js",
+      "src/components/color-utils/ColorPreview.js",
+      "src/components/color-utils/ColorSinglePicker.js",
+      "src/components/color-utils/Icon.js",
+      "src/components/color-utils/index.js",
+      "src/components/iconify/Iconify.js",
+      "src/components/iconify/index.js",
+      "src/components/label/Label.js",
+      "src/components/label/index.js",
+      "src/components/label/styles.js",
+      "src/components/logo/Logo.js",
+      "src/components/logo/index.js",
+      "src/components/nav-section/NavSection.js",
+      "src/components/nav-section/index.js",
+      "src/components/nav-section/styles.js",
+      "src/components/scroll-to-top/ScrollToTop.js",
+      "src/components/scroll-to-top/index.js",
+      "src/components/scrollbar/Scrollbar.js",
+      "src/components/scrollbar/index.js",
+      "src/components/scrollbar/styles.js",
+      "src/components/svg-color/SvgColor.js",
+      "src/components/svg-color/index.js",
+      "src/hooks/useResponsive.js",
+      "src/index.js",
+      "src/layouts/dashboard/DashboardLayout.js",
+      "src/layouts/dashboard/Footer.js",
+      "src/layouts/dashboard/header/AccountPopover.js",
+      "src/layouts/dashboard/header/LanguagePopover.js",
+      "src/layouts/dashboard/header/NotificationsPopover.js",
+      "src/layouts/dashboard/header/Searchbar.js",
+      "src/layouts/dashboard/header/index.js",
+      "src/layouts/dashboard/index.js",
+      "src/layouts/dashboard/nav/config.js",
+      "src/layouts/dashboard/nav/index.js",
+      "src/layouts/simple/SimpleLayout.js",
+      "src/layouts/simple/index.js",
+      "src/pages/Home.js",
+      "src/pages/Page404.js",
+      "src/pages/ProjectDetail.js",
+      "src/pages/ProjectsPage.js",
+      "src/redux/actions/contact.js",
+      "src/redux/actions/education.js",
+      "src/redux/actions/experience.js",
+      "src/redux/actions/projects.js",
+      "src/redux/actions/types.js",
+      "src/redux/reducers/contact.js",
+      "src/redux/reducers/education.js",
+      "src/redux/reducers/experience.js",
+      "src/redux/reducers/index.js",
+      "src/redux/reducers/projects.js",
+      "src/reportWebVitals.js",
+      "src/routes.js",
+      "src/sections/home/ContactForm.js",
+      "src/sections/home/Education.js",
+      "src/sections/home/Experience.js",
+      "src/sections/home/GetInTouch.js",
+      "src/sections/home/ListTools.js",
+      "src/sections/home/Services.js",
+      "src/sections/project/ImageGallery.js",
+      "src/sections/project/ProjectCard.js",
+      "src/sections/project/ProjectsList.js",
+      "src/serviceWorker.js",
+      "src/store.js",
+      "src/theme/customShadows.js",
+      "src/theme/globalStyles.js",
+      "src/theme/index.js",
+      "src/theme/overrides/Autocomplete.js",
+      "src/theme/overrides/Backdrop.js",
+      "src/theme/overrides/Button.js",
+      "src/theme/overrides/Card.js",
+      "src/theme/overrides/Input.js",
+      "src/theme/overrides/Paper.js",
+      "src/theme/overrides/Table.js",
+      "src/theme/overrides/Tooltip.js",
+      "src/theme/overrides/Typography.js",
+      "src/theme/overrides/index.js",
+      "src/theme/palette.js",
+      "src/theme/shadows.js",
+      "src/theme/typography.js",
+      "src/utils/cssStyles.js",
+      "src/utils/formatNumber.js",
+      "src/utils/formatTime.js",
+      "tailwind.config.js"
+    ]
+  }
+}
